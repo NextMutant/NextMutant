@@ -19,7 +19,7 @@
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">Uttaran Bose</span>
-                <img src="./assets/images/person.jpg" class="d-none d-lg-block rounded-circle" alt="">
+                <img src="./assets/images/profile.jpg" class="d-none d-lg-block rounded-circle" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,41 +87,72 @@
                     </div>
                 </div>
 
-                <div class="row gy-4">
+                <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row gy-4">
+                                <div class="col-md-4" data-aos="fade-up">
+                                    <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox rounded-4">
+                                            <i class="las la-feather"></i>
+                                        </div>
+                                        <h5 class="mt-4 mb-2">UX Design</h5>
+                                        <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                    </div>
+                                </div>
 
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-4">
-                                <i class="las la-feather"></i>
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox rounded-4">
+                                            <i class="las la-pencil-ruler"></i>
+                                        </div>
+                                        <h5 class="mt-4 mb-2">Branding</h5>
+                                        <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox rounded-4">
+                                            <i class="las la-laptop-code"></i>
+                                        </div>
+                                        <h5 class="mt-4 mb-2">Web Designing</h5>
+                                        <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                    </div>
+                                </div>
                             </div>
-                            <h5 class="mt-4 mb-2">UX Design</h5>
-                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
-                            <a href="#" class="link-custom">Read More</a>
+                        </div>
+
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row gy-4">
+                                <div class="col-md-4" data-aos="fade-up">
+                                    <div class="service p-4 bg-base rounded-4 shadow-effect">
+                                        <div class="iconbox rounded-4">
+                                            <i class="las la-chart-line"></i>
+                                        </div>
+                                        <h5 class="mt-4 mb-2">Quant Finance</h5>
+                                        <p>I develop sophisticated quantitative models and algorithms for financial analysis and trading strategies</p>
+                                        <a href="#" class="link-custom">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-4">
-                                <i class="las la-pencil-ruler"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Branding</h5>
-                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
-                            <a href="#" class="link-custom">Read More</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="service p-4 bg-base rounded-4 shadow-effect">
-                            <div class="iconbox rounded-4">
-                                <i class="las la-laptop-code"></i>
-                            </div>
-                            <h5 class="mt-4 mb-2">Web Designing</h5>
-                            <p>I craft high-performing and delightful experiences tailored and conversion-focused</p>
-                            <a href="#" class="link-custom">Read More</a>
-                        </div>
-                    </div>
-
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
             </div>
@@ -290,71 +321,146 @@
 
                 <div class="row gy-5">
                     <div class="col-lg-6">
-
                         <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Education</h3>
-                        <div class="row gy-4">
+                        <div id="educationCarousel" class="carousel slide vertical" data-bs-ride="carousel" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <!-- First Group -->
+                                <div class="carousel-item active">
+                                    <div class="row gy-4">
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Master of Science in Data Science</h4>
+                                                <p class="text-brand mb-2">Stanford University (2023 - 2025)</p>
+                                                <p class="mb-0">Specialized in Machine Learning and Quantitative Finance. Research focus on deep learning applications in financial markets.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Bachelor in Computer Science</h4>
+                                                <p class="text-brand mb-2">MIT (2019 - 2023)</p>
+                                                <p class="mb-0">Major in Artificial Intelligence and Minor in Mathematics. Graduated with high honors and dean's list recognition.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Advanced Certification in Quantitative Finance</h4>
+                                                <p class="text-brand mb-2">CQF Institute (2024)</p>
+                                                <p class="mb-0">Specialized training in quantitative methods, derivatives pricing, and algorithmic trading strategies.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Master of Software Engineering</h4>
-                                    <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
-                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                <!-- Second Group -->
+                                <div class="carousel-item">
+                                    <div class="row gy-4">
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Financial Mathematics Course</h4>
+                                                <p class="text-brand mb-2">London School of Economics (2023)</p>
+                                                <p class="mb-0">Intensive course in stochastic calculus, financial modeling, and quantitative risk assessment.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Deep Learning Specialization</h4>
+                                                <p class="text-brand mb-2">DeepLearning.AI (2022)</p>
+                                                <p class="mb-0">Completed advanced coursework in neural networks, optimization algorithms, and deep learning applications.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Data Science Fellowship</h4>
+                                                <p class="text-brand mb-2">Insight Data Science (2023)</p>
+                                                <p class="mb-0">Selected for intensive fellowship program focusing on practical applications of ML in finance.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Master of Software Engineering</h4>
-                                    <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
-                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Master of Software Engineering</h4>
-                                    <p class="text-brand mb-2">De Mars University Venston Bay (2015 - 2020)</p>
-                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-
+                            <!-- Carousel Navigation -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#educationCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#educationCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-
                     </div>
 
                     <div class="col-lg-6">
+                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experience</h3>
+                        <div id="experienceCarousel" class="carousel slide vertical" data-bs-ride="carousel" data-bs-interval="false">
+                            <div class="carousel-inner">
+                                <!-- First Group -->
+                                <div class="carousel-item active">
+                                    <div class="row gy-4">
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Senior Quantitative Researcher</h4>
+                                                <p class="text-brand mb-2">Goldman Sachs (2024 - Present)</p>
+                                                <p class="mb-0">Leading the development of ML-based trading strategies and risk management systems. Implementing deep learning models for market prediction.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Machine Learning Engineer</h4>
+                                                <p class="text-brand mb-2">Two Sigma (2023 - 2024)</p>
+                                                <p class="mb-0">Developed and deployed AI models for market analysis and automated trading systems. Improved strategy returns by 25%.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Data Science Intern</h4>
+                                                <p class="text-brand mb-2">JP Morgan Chase (2022 - 2023)</p>
+                                                <p class="mb-0">Worked on predictive modeling for market trends and risk assessment. Implemented novel NLP techniques for sentiment analysis.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <h3 class="mb-4" data-aos="fade-up" data-aos-delay="300">Experiance</h3>
-                        <div class="row gy-4">
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Applications developer</h4>
-                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
-                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
+                                <!-- Second Group -->
+                                <div class="carousel-item">
+                                    <div class="row gy-4">
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Research Assistant</h4>
+                                                <p class="text-brand mb-2">MIT FinTech Lab (2021 - 2022)</p>
+                                                <p class="mb-0">Conducted research on algorithmic trading strategies and market microstructure. Published two papers in top-tier conferences.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>Software Engineering Intern</h4>
+                                                <p class="text-brand mb-2">Citadel (2021)</p>
+                                                <p class="mb-0">Developed high-frequency trading algorithms and optimization tools for the systematic trading desk.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12" data-aos="fade-up">
+                                            <div class="bg-base p-4 rounded-4 shadow-effect">
+                                                <h4>AI Research Intern</h4>
+                                                <p class="text-brand mb-2">DeepMind (2020)</p>
+                                                <p class="mb-0">Worked on reinforcement learning applications for financial market simulation and strategy optimization.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Applications developer</h4>
-                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
-                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-
-                            <div class="col-12" data-aos="fade-up" data-aos-delay="600">
-                                <div class="bg-base p-4 rounded-4 shadow-effect">
-                                    <h4>Applications developer</h4>
-                                    <p class="text-brand mb-2">Twitter (2018 - 2020)</p>
-                                    <p class="mb-0">All we are more and design lorem ipsum dolor creativity sit amet consectetur adipisicing elit</p>
-                                </div>
-                            </div>
-
+                            <!-- Carousel Navigation -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#experienceCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#experienceCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-
                     </div>
-
                 </div>
 
             </div>
@@ -372,47 +478,106 @@
                     </div>
                 </div>
 
-                <div class="row gy-4">
+                <div id="blogCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row gy-4">
+                                <div class="col-md-4" data-aos="fade-up">
+                                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image rounded-4">
+                                            <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-custom-content p-4">
+                                            <p class="text-brand mb-2">20 Dec, 2022</p>
+                                            <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                            <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="col-md-4" data-aos="fade-up">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image rounded-4">
+                                            <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
+                                        </div>
+                                        <div class="card-custom-content p-4">
+                                            <p class="text-brand mb-2">20 Dec, 2022</p>
+                                            <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                            <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image rounded-4">
+                                            <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
+                                        </div>
+                                        <div class="card-custom-content p-4">
+                                            <p class="text-brand mb-2">20 Dec, 2022</p>
+                                            <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
+                                            <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">20 Dec, 2022</p>
-                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                                <a href="#" class="link-custom">Read More</a>
+                        </div>
+
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row gy-4">
+                                <div class="col-md-4" data-aos="fade-up">
+                                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image rounded-4">
+                                            <img class="rounded-4" src="./assets/images/blog-post-1.jpg" alt="">
+                                        </div>
+                                        <div class="card-custom-content p-4">
+                                            <p class="text-brand mb-2">15 Oct, 2025</p>
+                                            <h5 class="mb-4">Machine Learning in Quantitative Finance</h5>
+                                            <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image rounded-4">
+                                            <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
+                                        </div>
+                                        <div class="card-custom-content p-4">
+                                            <p class="text-brand mb-2">10 Oct, 2025</p>
+                                            <h5 class="mb-4">Deep Learning for Time Series Prediction</h5>
+                                            <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
+                                    <div class="card-custom rounded-4 bg-base shadow-effect">
+                                        <div class="card-custom-image rounded-4">
+                                            <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
+                                        </div>
+                                        <div class="card-custom-content p-4">
+                                            <p class="text-brand mb-2">5 Oct, 2025</p>
+                                            <h5 class="mb-4">Building AI-Powered Trading Systems</h5>
+                                            <a href="#" class="link-custom">Read More</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog-post-2.jpg" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">20 Dec, 2022</p>
-                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card-custom rounded-4 bg-base shadow-effect">
-                            <div class="card-custom-image rounded-4">
-                                <img class="rounded-4" src="./assets/images/blog-post-3.jpg" alt="">
-                            </div>
-                            <div class="card-custom-content p-4">
-                                <p class="text-brand mb-2">20 Dec, 2022</p>
-                                <h5 class="mb-4">Design a creative landing page using Bootstrap 5</h5>
-                                <a href="#" class="link-custom">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-
+                    <!-- Carousel Navigation -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
 
             </div>
