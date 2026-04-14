@@ -1,9 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 
 import profileImage from '../assets/image.png';
-import pkThumb from '../assets/pk.png';
-import snThumb from '../assets/sn.png';
-import ddThumb from '../assets/dd1.png';
 
 // --- Sub-components for different sections ---
 
@@ -205,11 +202,7 @@ const DinoGame: React.FC<DinoGameProps> = ({ spawnRate = 70, scale = 1 }) => {
   );
 };
 
-interface SectionProps {
-  onNavigate: (section: any) => void;
-}
-
-const HomeSection: React.FC<SectionProps> = ({ onNavigate }) => (
+const HomeSection: React.FC = () => (
   <div className="grid grid-cols-1 lg:grid-cols-2 border border-dashed border-terminal-muted/60 h-full overflow-hidden">
     {/* Left Column: Welcome & Portrait */}
     <div className="p-2 md:p-4 border-b lg:border-b-0 lg:border-r border-dashed border-terminal-muted/60 flex flex-col items-center justify-center overflow-hidden">
@@ -940,7 +933,7 @@ const LandingPage: React.FC = () => {
 
           {/* Section Rendering Container */}
           <div className="flex-1 overflow-hidden">
-            {activeSection === 'home' && <HomeSection onNavigate={(s) => navigateToSection(s as SectionType)} />}
+            {activeSection === 'home' && <HomeSection />}
             {activeSection === 'projects' && <ProjectsSection />}
             {activeSection === 'about' && <AboutSection />}
             {activeSection === 'experience' && <ExperienceSection />}
