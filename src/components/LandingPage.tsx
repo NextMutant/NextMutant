@@ -104,9 +104,11 @@ const SectionLoader: React.FC<{ section: string }> = ({ section }) => {
 interface DinoGameProps {
   spawnRate?: number;
   scale?: number;
+  width?: string;
+  className?: string;
 }
 
-const DinoGame: React.FC<DinoGameProps> = ({ spawnRate = 70, scale = 1 }) => {
+const DinoGame: React.FC<DinoGameProps> = ({ spawnRate = 70, scale = 1, width = '90%', className = '' }) => {
   const [dinoY, setDinoY] = useState(0);
   const [isJumping, setIsJumping] = useState(false);
   const [obstacles, setObstacles] = useState<{ x: number, id: number }[]>([]);
@@ -163,8 +165,8 @@ const DinoGame: React.FC<DinoGameProps> = ({ spawnRate = 70, scale = 1 }) => {
 
   return (
     <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-30 select-none flex justify-center">
-      {/* Container shifted more upwards, made larger, and limited to 90% width */}
-      <div className="absolute w-[90%] h-32 bottom-24">
+      {/* Container shifted more upwards, made larger, and limited to specified width */}
+      <div className={`absolute h-32 bottom-24 left-1/2 -translate-x-1/2 ${className}`} style={{ width }}>
         {/* Ground Line */}
         <div className="absolute bottom-0 left-0 w-full h-[1.5px] bg-terminal-muted/50" />
         
@@ -261,7 +263,7 @@ const HomeSection: React.FC = () => (
         </div>
 
         {/* Dino Game Area */}
-        <DinoGame />
+        <DinoGame width="60%" className="ml-20" />
 
         <div className="mt-2 space-y-0.5 text-[9px] md:text-[10px] text-terminal-muted flex-shrink-0 z-10 pointer-events-none">
           <p>. . . /help for all commands</p>
