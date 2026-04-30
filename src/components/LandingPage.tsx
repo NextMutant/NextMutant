@@ -276,6 +276,13 @@ const HomeSection: React.FC = () => (
 
 const ProjectsSection: React.FC = () => {
   const projects = [
+    {
+      name: 'ComputerVision_Football-Analysis',
+      type: 'AI-driven Pipeline',
+      desc: 'An AI-driven football analytics pipeline featuring YOLOv5 detection and ByteTrack ID persistence to track players, teams, and ball possession. It leverages optical flow for camera compensation and K-means clustering to deliver real-time spatial metrics, speed calculations, and movement heatmaps.',
+      tags: ['Python', 'OpenCV', 'Byte-Track', 'YOLO'],
+      repo: 'https://github.com/NextMutant/FootballAnalysis_opencv'
+    },
     { 
       name: 'Portfolio_Optimizer', 
       type: 'HF Optimization Engine', 
