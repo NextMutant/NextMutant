@@ -5,6 +5,9 @@ on:
        - cron: "0 0 * * 0"   # once a week, Sunday midnight
   workflow_dispatch:      # allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   generate:
     runs-on: ubuntu-latest
@@ -15,11 +18,11 @@ jobs:
         with:
           github_user_name: NextMutant
           outputs: |
-            ./output/github-contribution-grid-snake.svg
-            ./output/github-contribution-grid-snake-dark.svg?palette=github-dark
+            ./output/pacman-contribution-graph.svg
+            ./output/pacman-contribution-graph-dark.svg?palette=github-dark
 
       - name: Push to GitHub Pages branch
-        uses: crazy-max/ghaction-github-pages@v3
+        uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: output
           build_dir: output
